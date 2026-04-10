@@ -8,24 +8,53 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header><img src="./Logo blanco.svg" alt="Teberite" class="logo" /></header>
+    <header>
+      <img src="./Logo blanco.svg" alt="Teberite" class="logo" />
+    </header>
 
     <main>
       <section class="hero">
         <div class="hero__content">
-          <p class="label">Consultora estratégica de marca</p>
-          <!-- <h1>Convertimos<br />la marca en motor<br />de competitividad.</h1> -->
-          <h1>Convertimos la marca en motor de competitividad.</h1>
-          <p class="sub">
-            Alineamos lo que una empresa es, hace y dice —<br />
-            para generar coherencia interna, foco estratégico<br />
-            y crecimiento sostenido.
-          </p>
+          <h1>Hola 👋 somos Teberite</h1>
+          <p class="sub">Una consultora estratégica que conecta marca, negocio y personas para mejorar la competitividad de tu empresa.</p>
+          <p class="sub">Estamos construyendo nuestra nueva web. Muy pronto podrás conocer mejor nuestra forma de pensar y trabajar.</p>
+          <p class="sub">Mientras tanto, esto es lo que podemos hacer por ti.</p>
+
+          <div class="servicios">
+            <div class="servicio">
+              <button class="servicio__header" aria-expanded="false">
+                <span>Estrategia de marca</span>
+                <span class="servicio__icon">+</span>
+              </button>
+              <div class="servicio__body">
+                <ul>
+                  <li>Definición de propósito, valores y posicionamiento</li>
+                  <li>Arquitectura de marca y narrativa corporativa</li>
+                  <li>Guía de identidad verbal y tono de comunicación</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="servicio">
+              <button class="servicio__header" aria-expanded="false">
+                <span>Desarrollo Web</span>
+                <span class="servicio__icon">+</span>
+              </button>
+              <div class="servicio__body">
+                <ul>
+                  <li>Desarrollo de aplicación web</li>
+                  <li>Desarrollo de sitios web</li>
+                  <li>Mejora en experiencia de usuario de tu sitio web</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="hero__cta">
-          <p>Nuestra página está en construccin.</p>
-          <p class="cta-text">Déjanos tu email y te haremos un diagnóstico de alineación interna <strong>GRATUITO.</strong></p>
+          <p class="cta-text">
+            <strong>Déjanos tu email y te haremos un diagnóstico de alineación interna GRATUITO.</strong>
+          </p>
 
           <form name="contactos" netlify netlify-honeypot="bot-field" action="/gracias.html">
             <input type="hidden" name="form-name" value="contactos" />
