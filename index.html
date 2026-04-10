@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teberite — Próximamente</title>
+    <meta name="description" content="Consultora estratégica de marca. Alineamos lo que una empresa es, hace y dice." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header><img src="./Logo blanco.svg" alt="Teberite" class="logo" /></header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <p class="label">Consultora estratégica de marca</p>
+          <!-- <h1>Convertimos<br />la marca en motor<br />de competitividad.</h1> -->
+          <h1>Convertimos la marca en motor de competitividad.</h1>
+          <p class="sub">
+            Alineamos lo que una empresa es, hace y dice —<br />
+            para generar coherencia interna, foco estratégico<br />
+            y crecimiento sostenido.
+          </p>
+        </div>
+
+        <div class="hero__cta">
+          <p>Nuestra página está en construccin.</p>
+          <p class="cta-text">Déjanos tu email y te haremos un diagnóstico de alineación interna <strong>GRATUITO.</strong></p>
+
+          <form name="contactos" netlify netlify-honeypot="bot-field" action="/gracias.html">
+            <input type="hidden" name="form-name" value="contactos" />
+            <p class="hidden">
+              <label>No rellenar: <input name="bot-field" /></label>
+            </p>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+              </div>
+              <div class="field">
+                <label for="empresa">Empresa</label>
+                <input type="text" id="empresa" name="empresa" placeholder="Tu empresa" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="hola@tuempresa.com" required />
+            </div>
+
+            <button type="submit">
+              Quiero mi diagnóstico gratuito
+              <span class="arrow">→</span>
+            </button>
+          </form>
+
+          <p class="disclaimer">Sin spam. Solo te contactamos para el diagnóstico.</p>
+        </div>
+      </section>
+
+      <footer>
+        <p>© Teberite 2026</p>
+        <div class="footer-rule"></div>
+        <p class="footer-tagline">Orden estratégico para marcas que quieren crecer.</p>
+      </footer>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

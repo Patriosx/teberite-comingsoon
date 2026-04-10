@@ -1,0 +1,305 @@
+@import url('https://api.fontshare.com/v2/css?f[]=switzer@300,400,600,800&display=swap');
+
+/* ── Reset ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --black: #0a0a0a;
+  --white: #f5f4f0;
+  --ink: #1a1a1a;
+  --gray: #888;
+  --rule: rgba(245, 244, 240, 0.12);
+
+  --font: 'Switzer', sans-serif;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--font);
+  font-weight: 300;
+  line-height: 1.7;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ── Header ── */
+header {
+  border: 1px solid var(--rule);
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 4rem;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  height: 28px;
+  /* opacity: 0.9; */
+}
+
+/* ── Main layout ── */
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Hero ── */
+.hero {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10rem 4rem;
+  width: 100%;
+}
+
+/* ── Left column ── */
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(245, 244, 240, 0.4);
+  opacity: 0;
+  animation: fadeUp 1s var(--ease) 0.1s both;
+}
+
+h1 {
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: var(--white);
+  opacity: 0;
+  animation: fadeUp 1s var(--ease) 0.2s both;
+}
+
+.sub {
+  font-size: clamp(0.9rem, 1.2vw, 1.05rem);
+  line-height: 1.8;
+  color: rgba(245, 244, 240, 0.5);
+  opacity: 0;
+  animation: fadeUp 1s var(--ease) 0.35s both;
+}
+
+/* ── Right column ── */
+.hero__cta {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  border-left: 1px solid var(--rule);
+  padding-left: 6rem;
+  opacity: 0;
+  animation: fadeUp 1s var(--ease) 0.5s both;
+}
+
+.cta-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(245, 244, 240, 0.6);
+}
+
+.cta-text strong {
+  color: var(--white);
+  font-weight: 600;
+}
+
+/* ── Form ── */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 1.5rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--rule);
+  padding: 1.1rem 0;
+  transition: border-color 0.3s ease;
+}
+
+.field:focus-within {
+  border-color: rgba(245, 244, 240, 0.5);
+}
+
+label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(245, 244, 240, 0.3);
+  margin-bottom: 0.4rem;
+  transition: color 0.3s ease;
+}
+
+.field:focus-within label {
+  color: rgba(245, 244, 240, 0.7);
+}
+
+input {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: var(--font);
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--white);
+  -webkit-appearance: none;
+}
+
+input::placeholder {
+  color: rgba(245, 244, 240, 0.18);
+  font-style: italic;
+}
+
+/* ── Button ── */
+button[type='submit'] {
+  margin-top: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-family: var(--font);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--black);
+  background: var(--white);
+  border: none;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  align-self: flex-start;
+}
+
+button[type='submit']:hover {
+  opacity: 0.85;
+}
+
+.arrow {
+  font-size: 1rem;
+  transition: transform 0.3s var(--ease);
+}
+
+button[type='submit']:hover .arrow {
+  transform: translateX(4px);
+}
+
+.disclaimer {
+  font-size: 0.72rem;
+  color: rgba(245, 244, 240, 0.25);
+  letter-spacing: 0.04em;
+}
+
+/* ── Footer ── */
+footer {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-top: 1px solid var(--rule);
+}
+
+footer p {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(245, 244, 240, 0.25);
+}
+
+.footer-rule {
+  flex: 1;
+  height: 1px;
+  background: var(--rule);
+}
+
+/* ── Animation ── */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  header {
+    padding: 1.5rem 2rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    padding: 9rem 2rem 5rem;
+  }
+
+  .hero__cta {
+    border-left: none;
+    border-top: 1px solid var(--rule);
+    padding-left: 0;
+    padding-top: 3rem;
+  }
+
+  footer {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: clamp(2.2rem, 8vw, 3rem);
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  button[type='submit'] {
+    width: 100%;
+  }
+}
