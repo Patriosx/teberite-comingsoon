@@ -74,7 +74,14 @@ main {
   opacity: 0;
   animation: fadeUp 1s var(--ease) 0.1s both;
 }
-
+.hero__salute {
+  display: flex;
+  align-items: center;
+}
+.hero__logo {
+  height: 2.4rem;
+  margin-left: 1rem;
+}
 h1 {
   font-size: clamp(1.8rem, 3.5vw, 2.8rem);
   font-weight: 800;

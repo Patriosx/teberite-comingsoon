@@ -1,65 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Teberite — Gracias</title>
-  <link rel="stylesheet" href="./styles.css" />
-  <style>
-    .gracias {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 4rem 2rem;
-      gap: 1.5rem;
-    }
-    .gracias .num {
-      font-size: 0.72rem;
-      font-weight: 600;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: rgba(245,244,240,0.3);
-    }
-    .gracias h1 {
-      font-size: clamp(2rem, 5vw, 3.5rem);
-      animation: fadeUp 1s var(--ease) both;
-    }
-    .gracias p {
-      color: rgba(245,244,240,0.5);
-      max-width: 42ch;
-      animation: fadeUp 1s var(--ease) 0.15s both;
-    }
-    .gracias a {
-      margin-top: 1rem;
-      font-size: 0.78rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: rgba(245,244,240,0.4);
-      text-decoration: none;
-      border-bottom: 1px solid rgba(245,244,240,0.15);
-      padding-bottom: 2px;
-      transition: color 0.3s ease, border-color 0.3s ease;
-      animation: fadeUp 1s var(--ease) 0.3s both;
-    }
-    .gracias a:hover {
-      color: var(--white);
-      border-color: var(--white);
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <img src="./Logo blanco .svg" alt="Teberite" class="logo" />
-  </header>
-  <div class="gracias">
-    <p class="num">Recibido</p>
-    <h1>Nos ponemos en contacto contigo en breve.</h1>
-    <p>Revisaremos tu caso y prepararemos un diagnóstico de alineación interna personalizado para tu empresa.</p>
-    <a href="/">← Volver</a>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teberite — Gracias</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      .gracias {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 4rem 2rem;
+        gap: 1.5rem;
+      }
+      .gracias .num {
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: rgba(245, 244, 240, 0.3);
+      }
+      .gracias h1 {
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        animation: fadeUp 1s var(--ease) both;
+      }
+      .gracias p {
+        color: rgba(245, 244, 240, 0.5);
+        max-width: 42ch;
+        animation: fadeUp 1s var(--ease) 0.15s both;
+      }
+      .gracias a {
+        margin-top: 1rem;
+        font-size: 0.78rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: rgba(245, 244, 240, 0.4);
+        text-decoration: none;
+        border-bottom: 1px solid rgba(245, 244, 240, 0.15);
+        padding-bottom: 2px;
+        transition:
+          color 0.3s ease,
+          border-color 0.3s ease;
+        animation: fadeUp 1s var(--ease) 0.3s both;
+      }
+      .gracias a:hover {
+        color: var(--white);
+        border-color: var(--white);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="./Logo.svg" alt="Teberite" class="logo" />
+    </header>
+    <div class="gracias">
+      <p class="num">Recibido</p>
+      <h1>Nos ponemos en contacto contigo en breve.</h1>
+      <p>Revisaremos tu caso y prepararemos un diagnóstico de alineación interna personalizado para tu empresa.</p>
+      <a href="./index.html">← Volver</a>
+    </div>
+  </body>
 </html>
